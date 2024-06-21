@@ -7,10 +7,30 @@ body{
 }
 
 #sub{
-     margin: auto;
+    text-align: center;
+     margin: 10%;
      background-color: ivory;
 }
 
 h1{
-    color: green;
+    color: rgb(5, 77, 5);
+    background-color: palegreen;
+    padding: 3%;
+    border-radius: 50%;
 }
+
+h3{
+    background-color: black;
+    color: azure;
+    padding: 1%;
+}
+
+.dan{
+    font-size: large;
+    color: red;
+}
+
+#content{
+    font-size: large;
+}
+
