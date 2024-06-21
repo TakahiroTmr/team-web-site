@@ -1,0 +1,16 @@
+body{
+    background-color: azure;
+}
+
+#main{
+    text-align: center;
+}
+
+#sub{
+     margin: auto;
+     background-color: ivory;
+}
+
+h1{
+    color: green;
+}
