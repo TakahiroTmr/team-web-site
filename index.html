@@ -6,7 +6,22 @@
     <title>津村賢宏の紹介</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
-<body>
+<body id="body">
+    <div id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div id="sidebar">
+        <ul>
+            <li><a href="index.html">トップページ</a></li>
+            <li><a href="HAI.html">ヒューマン・エージェント・インタラクション</a></li>
+            <li><a href="EMA.html">人工物（AIやロボット）に共感するとは？</a></li>
+            <li><a href="exp.html">ツンデレが効果的に作用するために必要な要素とは？</a></li>
+        </ul>
+    </div>
+
     <div id="main">
     <h1>ようこそ！もしかして、私のこと気になっちゃった！？</h1>
     <h3>このWebページでは、東洋大学情報連携学部の津村賢宏の研究と趣味を混ぜ合わせた紹介をするよ～</h3>
@@ -14,11 +29,12 @@
     <hr>
     <br>
     </div>
-    <div id="content">
+    <div class="container">
+    <div id="content" class="left">
     <ul>
         <li><strong>研究分野の紹介</strong>（詳しい説明は<a href="https://www.takahiro-tmr.com/%E7%A0%94%E7%A9%B6">こちら</a>をクリック）
         <ul>
-            <li><a href="HAI.html">ヒューマン・エージェント。インタラクション(Human-Agent Interaction, HAI)とは？</a></li>
+            <li><a href="HAI.html">ヒューマン・エージェント・インタラクション(Human-Agent Interaction, HAI)とは？</a></li>
             <li><a href="EMA.html">人工物（AIやロボット）に共感するとは？</a></li>
         </ul></li>
         <br>
@@ -29,6 +45,10 @@
     </ul>
 
     <p class="dan"><strong>※遷移先のサイトによってはGoogle アカウントが必要になります。</strong></p>
+    </div>
+    <div class="right">
+    <img src="path/to/image.jpg" alt="画像の説明">
+    </div>    
     <br>
     <hr>
     </div>
@@ -39,5 +59,7 @@
     <p>助教　津村賢宏</p>
     <p>email: takahiro.tsumura[at]iniad.org</p>
     </div>
+
+    <script src="js/index.js"></script>
 </body>
 </html>

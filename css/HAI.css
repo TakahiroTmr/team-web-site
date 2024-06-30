@@ -1,0 +1,200 @@
+/* Reset CSS */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #f0f0f0, #e0e0e0);
+    color: #333;
+}
+
+.container {
+    max-width: auto;
+    margin: 20px auto;
+    padding: 0px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    color: #f38b14;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+ul {
+    margin-bottom: 30px;
+}
+
+ul li {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 1.1rem;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #1a1313;
+    margin: 30px 0;
+}
+
+.book-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.book-container img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.book-container img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .book-container img {
+        max-width: 100%;
+    }
+}
+
+/* ハンバーガーメニューのスタイル */
+#hamburger {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#hamburger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: green;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* ハンバーガーメニューが開いた状態のスタイル */
+#hamburger.open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+#hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+#hamburger.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* サイドバーのスタイル */
+#sidebar {
+    width: 200px; /* サイドバーの固定幅 */
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 50px;
+    left: -2500px; /* 初期状態では左に隠れている */
+    height: 100%; /* ビューポートの高さいっぱいに */
+    overflow-y: auto; /* コンテンツがビューポートより大きい場合はスクロール可能にする */
+    transition: left 0.3s ease;
+    z-index: 999; /* メインコンテンツより手前に表示する */
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar li {
+    margin-bottom: 10px;
+}
+
+#sidebar a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#sidebar a:hover {
+    background-color: #6c5ce7;
+}
+
+/* メインコンテンツ */
+#main {
+    margin-left: 0; /* サイドバーが開いたときはメインコンテンツを右にずらす */
+    padding: 0px;
+    width: 100%; /* サイドバーが開いたときは全幅に広げる */
+    transition: margin-left 0.3s ease;
+}
+
+#body.open {
+    margin-left: 250px; /* サイドバーの幅分メインコンテンツを右にずらす */
+}
+
+/* サイドバーが開いたときのスタイル */
+#sidebar.open {
+    left: 0; /* サイドバーを表示する */
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.left, .right {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.left {
+    background-color: white;
+}
+
+.right {
+    background-color: white;
+}
+
+#sub {
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    ;
+}
+
+#sub h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#sub p {
+    margin-bottom: 20px;
+}

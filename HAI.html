@@ -6,14 +6,30 @@
     <title>HAIとは？</title>
     <link rel="stylesheet" href="css/HAI.css">
 </head>
-<body>
-    <div>
+<body id="body">
+    <div id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div id="sidebar">
+        <ul>
+            <li><a href="index.html">トップページ</a></li>
+            <li><a href="HAI.html">ヒューマン・エージェント・インタラクション</a></li>
+            <li><a href="EMA.html">人工物（AIやロボット）に共感するとは？</a></li>
+            <li><a href="exp.html">ツンデレが効果的に作用するために必要な要素とは？</a></li>
+        </ul>
+    </div>
+
+    <div id="main">
         <h2>ヒューマン・エージェント・インタラクション(HAI)について</h2>
         <p>HAIとは、人間とエージェント、ロボット間のインタラクション設計に関する新しい研究開発分野です。
             <br>……といっても、インタラクションって何ぞや？って感じだよね～
         </p>
+        <div class="container">
+        <div class="left">
         <p><strong>インタラクションとは、相互の関係性</strong>と考えると、少しはわかりやすくなる！</p>
-        <img src="" alt="関係性の想像ができる画像">
         <p>では、その関係性にはどういったものが想定されるのか？
             <br>例えば、以下のような関係性はどうだろう？
         </p>
@@ -27,7 +43,13 @@
 
         <h3>関係性は人間社会において必ず存在しているものであり、<br>
             関係性を無視した事象は実応用に適しているのだろうか？</h3>
+        </div>
+        <div class="right">
+            <img src="" alt="関係性の想像ができる画像">
+        </div>
+        </div>
         <hr>
+        <div id="sub">
         <p>以上のような疑問を解決・解明するために、HAI分野は関係性を重視した研究が多い！
             <br>AIの分野の1つではあるが、ここまでの説明を理解すると、AIっぽさ（所謂、機械学習）は重視していないことがわかる。
             <br>そもそも、AI=機械学習と印象がついていること自体が偏見といえるだろう。
@@ -39,7 +61,8 @@
         <!---
             以下、それぞれの本を軽く紹介する感じで終わり
             --->
-
+        </div>
     </div>
+    <script src="js/HAI.js"></script>
 </body>
 </html>
